@@ -1,0 +1,213 @@
+body{
+    margin: 0px;
+    background-color: #161a1d;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+h1{
+    display: flex;
+}
+.header{
+    background-color: #000000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img{
+    width: 200px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+}
+.header__menu{
+    margin-right: 30px;
+}
+.header__menu--profile{
+    margin-right: 8px;
+    color:white;
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header__menu--profile img {
+    border-radius: 10pc;
+}
+
+.header__menu:hover ul, ul:hover{
+    display: block;
+}
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+.header__menu li{
+    margin: 20px 0px
+}
+.header__menu a{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.header__menu ul {
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px 14px;
+}
+.header__menu--profile img{
+   margin-right: 8px;
+   width: 40px;
+} 
+.header__menu--profile p{
+   margin: 0px;
+   color:white
+} 
+.main {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.categories__title {
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 16px ;
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 100%;
+    display: flex;
+}
+.main__title {
+    color: white;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 25px;    
+}
+.input {
+    background: white;
+    border: 2px solid black;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+    border-radius: 60px 60px 60px 60px;
+}
+
+
+*   {
+    margin: 0px;
+}
+
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position:-webkit-sticky;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+
+}
+
+.carousel-item {
+    background-color: palevioletred;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+
+}
+
+.carousel-item:hover~.carousel-item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9)0%, rgba(0, 0, 0, 0)100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+.carousel-item__details img{
+    width: 25px;
+    height: 25px;
+}
+.carousel-item__details p{
+    margin: 0px;
+}
+
+.carousel-item__details:hover {
+    opacity: 1;
+    color: white;
+
+}
+
+.footer {
+    background-color: #000000;
+    width: 100%;
+    height: 30px;
+    padding-top: 20px;
+}
+
+.footer a {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px; 
+    padding-left: 60px;
+    text-decoration: none;  
+}
+
+.footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
