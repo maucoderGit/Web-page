@@ -69,8 +69,8 @@ body {
     color: white;
 }
 
-.buttom{
-    background-color: black;
+.button{
+    background-color: rgba(0,0,0,0.9);
     border: none;
     border-radius: 30px;
     color: white;
@@ -81,7 +81,13 @@ body {
     height: 50px;
     letter-spacing: 1px;
     margin: 10px 0px;
+    text-decoration: none;
 }
+.button p{
+    display: flex;
+    justify-content: center;
+}
+
 .footer {
     display: flex;
     align-items: center;
